@@ -22,7 +22,7 @@ import "github.com/google/wire"
 func InitializeFooStore() FooStorer {
 	wire.Build(
 		NewFooStore,
-		wire.Value(Foo("foo hello")),
+		wire.Value(Foo("foo hello value")),
 		wire.Bind(new(FooStorer), new(Store[string, Foo])),
 	)
 	return nil

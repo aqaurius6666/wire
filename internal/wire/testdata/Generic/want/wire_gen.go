@@ -15,5 +15,5 @@ func InitializeFooStore() FooStorer {
 }
 
 var (
-	_wireFooValue = Foo("foo hello")
+	_wireFooValue = Foo("foo hello value")
 )
